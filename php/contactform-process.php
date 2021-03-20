@@ -19,11 +19,6 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-if (empty($_POST["terms"])) {
-    $errorMSG = "Terms is required ";
-} else {
-    $terms = $_POST["terms"];
-}
 
 $EmailTo = "enjoymostar0@gmail.com";
 $Subject = "New message from EnjoyMostar landing page";
@@ -38,9 +33,6 @@ $Body .= $email;
 $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
-$Body .= "\n";
-$Body .= "Terms: ";
-$Body .= $terms;
 $Body .= "\n";
 
 // send email
