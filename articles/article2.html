@@ -59,7 +59,11 @@
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
         <!-- end of mobile menu toggle button -->
-
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <a href="../index.html"><img style="padding-right: 5px; margin: auto auto;" src="../images/uk.PNG" alt="alternative"></a>
+            <a href="../index_bos.html"><img style="padding-right: 5px;" src="../images/bih.PNG" alt="alternative"></a>
+            <a href="../index_ger.html"><img src="../images/de.PNG" alt="alternative"></a>
+        </div>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -132,12 +136,21 @@
                         <h3>Mostar Blues and Rock Festival </h3>
                         <div class="row">
                             <div class="col-md-6">
-                                <p>Is the first international festival of its kind in Bosnia and Herzegovina. For the past eleven editions, the Mostar Blues & Rock Festival has presented great musical names such as: Ten Years After, Ana Popović, Big Brother & The Holding Company, Sugar Blue, Snowy White, Dr. Feelgood, Tito & Tarantula, Deborah Coleman, Danny Shephard, and from the regional performances: Mothers, Partybreakers, Dado Topic & Telephone Blues Band, Josipa Lisac, Zdenka Kovacicek, Vlatko Stefanovski, Yu Grupa and others.</p>
+
+                                <p id="jezik">Is the first international festival of its kind in Bosnia and Herzegovina. For the past eleven editions, the Mostar Blues & Rock Festival has presented great musical names such as: Ten Years After, Ana Popović, Big Brother & The Holding Company, Sugar Blue, Snowy White, Dr. Feelgood, Tito & Tarantula, Deborah Coleman, Danny Shephard, and from the regional performances: Mothers, Partybreakers, Dado Topic & Telephone Blues Band, Josipa Lisac, Zdenka Kovacicek, Vlatko Stefanovski, Yu Grupa and others.</p>
+                                
+                                <script>
+                                    var jezik=window.location.href.substr(-3);
+                                    console.log(jezik)
+                                    if(jezik=="bos") document.getElementById("jezik").innerHTML=" Je prvi internacionalni festival ove vrste u Bosni i Hercegovini. Za proteklih jedanaest izdanja Mostar Blues & Rock Festival je predstavio velika muzička imena kao što su: Ten Years After, Ana Popović, Big Brother & The Holding Company, Sugar Blue, Snowy White, Dr. Feelgood, Tito & Tarantula, Deborah Coleman, Danny Shephard, a od regionalnih nastupali su: Majke, Partibrejkersi, Dado Topić & Telephone Blues Band, Josipa Lisac, Zdenka Kovačiček, Vlatko Stefanovski, Yu Grupa i drugi.";
+                                    else if(jezik=="ger") document.getElementById("jezik").innerHTML="Es ist das erste internationale Festival dieser Art in Bosnien und Herzegowina. In den letzten elf Ausgaben hat das Mostar Blues & Rock Festival großartige Musiknamen präsentiert, darunter: Zehn Jahre später Ana Popović, Big Brother & The Holding Company, Zuckerblau, Schneewittchen, Dr. Feelgood, Tito & Tarantula, Deborah Coleman, Danny Shephard und von den regionalen Auftritten: Mütter, Partybreaker, Dado Topic & Telephone Blues Band, Josipa Lisac, Zdenka Kovacicek, Vlatko Stefanovski, Yu Grupa und andere."
+                                </script>
                             </div> <!-- end of col -->
 
                             <div class="col-md-6">
                                 <div class="card-image">
-                                    <img class="img-fluid" src="../images/stari_most.jpg" alt="alternative">
+                                    <img class="img-fluid" src="https://www.dnevnik.ba/sites/default/files/novosti-slike/fena.jpg" alt="alternative">
+                                    <div style="font-size: 12px;"><i>Photo: dnevnik.ba</i></div>
                                 </div>
                             </div> <!-- end of col -->
                         </div> <!-- end of row -->
@@ -146,86 +159,35 @@
                     
   
                     
-                            
-                    <a class="btn-outline-reg back" href="../culture.html">BACK</a>
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic-2 -->
     <!-- end of privacy content -->
 
-
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Privacy Policy</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
-
-    
     <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="text-container about">
-                        <h4>Few Words About Aria</h4>
-                        <p class="white">We're passionate about creating the best mobile apps for personal develop passionate about creating the best mobile apps for. Personal develop passionate about creating the best mobile apps.</p>
+                        <h4>Few Words About Enjoy Mostar</h4>
+                        <p class="white">In love with Bosnia and Herzegovina, through the enjoymostar platform, we want to gather all Bosnian's beauties in one place and share them with the domicile and foreign population, with an emphasis on the city of Mostar.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Links</h4>
-                        <ul class="list-unstyled li-space-lg white">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Tools</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li class="media">
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Partners</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -233,18 +195,19 @@
     </div> <!-- end of footer -->  
     <!-- end of footer -->
 
-
     <!-- Copyright -->
     <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                    <p class="p-small">Copyright © www.enjoymo.ba</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
+
+
 
     
     <!-- Scripts -->

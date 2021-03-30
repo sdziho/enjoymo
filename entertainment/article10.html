@@ -52,7 +52,7 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="../images/enjoy_logo.PNG" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="../index.html"><img src="../images/enjoy_logo.PNG" alt="alternative"></a>
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,9 +61,9 @@
         </button>
         <!-- end of mobile menu toggle button -->
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <a href="../index.html"><img style="padding-right: 5px; margin: auto auto;" src="../images/uk.PNG" alt="alternative"></a>
-            <a href="../index_bos.html"><img style="padding-right: 5px;" src="../images/bih.PNG" alt="alternative"></a>
-            <a href="../index_ger.html"><img src="../images/de.PNG" alt="alternative"></a>
+            <a href="article10.html"><img style="padding-right: 5px; margin: auto auto;" src="../images/uk.PNG" alt="alternative"></a>
+            <a href="article10.html?lng=bos"><img style="padding-right: 5px;" src="../images/bih.PNG" alt="alternative"></a>
+            <a href="article10.html?lng=ger"><img src="../images/de.PNG" alt="alternative"></a>
         </div>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
@@ -138,7 +138,14 @@
                         <h3>Bunica boating</h3>
                         <div class="row">
                             <div class="col-md-6">
-                                <p>The offer includes a boat ride lasting 1h approx. , As well as Bosnian coffee for each person and homemade seasonal fruits. The boat on which we provide services is very strong, safe and adapted to Herzegovinian conditions (summer sun and winter winds). It is built of quality wood and its carrying capacity is up to 10 people. Due to the length and width of the water pressure, it is very heavy and stable. It is our Bosnian product. When you want to relax safety is inevitable.</div> <!-- end of col -->
+                                <p id="jezik">The offer includes a boat ride lasting 1h approx. , As well as Bosnian coffee for each person and homemade seasonal fruits. The boat on which we provide services is very strong, safe and adapted to Herzegovinian conditions (summer sun and winter winds). It is built of quality wood and its carrying capacity is up to 10 people. Due to the length and width of the water pressure, it is very heavy and stable. It is our Bosnian product. When you want to relax safety is inevitable.
+                                    <script>
+                                        var jezik=window.location.href.substr(-3);
+                                        console.log(jezik)
+                                        if(jezik=="ger") document.getElementById("jezik").innerHTML="Das Angebot beinhaltet eine Bootsfahrt von ca. 1 Stunde sowie bosnischen Kaffee für jede Person und hausgemachtes Obst der Saison. Das Boot, auf dem wir Dienstleistungen anbieten, ist sehr stark, sicher und an die herzegowinischen Bedingungen (Sommersonne und Winterwinde) angepasst. Es besteht aus hochwertigem Holz und hat eine Tragfähigkeit von bis zu 10 Personen. Aufgrund der Länge und Breite des Wasserdrucks ist es sehr schwer und stabil. Es ist unser bosnisches Produkt. Wenn Sie sich entspannen möchten, ist Sicherheit unvermeidlich."
+                                        else if(jezik=="bos") document.getElementById("jezik").innerHTML="Ponuda uključuje vožnju na lađi u trajanju od 1h cca, kao i bosansku kafu za svaku osobu i domaće sezonsko voće.Lađa na kojoj vršimo usluge jako je čvrsta, sigurna i prilagođena hercegovačkim uslovima (ljetno sunce i zimski vjetrovi). Izgrađena je od kvalitetnog drveta i njena nosivost je do 10 osoba. Zbog dužine i širine pritiska na vodu jako je teška i stabilna. Ona je naš bosanskohercegovački proizvod.Kada želite da se opustite sigurnost je neminovna."
+                                        </script>
+                            </div> <!-- end of col -->
 
                             <div class="col-md-6">
                                 <div class="card-image">
@@ -149,89 +156,35 @@
                         </div> <!-- end of row -->
                     </div> <!-- end of text-container-->
                     
-                    
-  
-                    
-                            
-                    <a class="btn-outline-reg back" href="../index.html#enter">BACK</a>
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic-2 -->
     <!-- end of privacy content -->
 
-
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Privacy Policy</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
-
-    
     <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="text-container about">
-                        <h4>Few Words About Aria</h4>
-                        <p class="white">We're passionate about creating the best mobile apps for personal develop passionate about creating the best mobile apps for. Personal develop passionate about creating the best mobile apps.</p>
+                        <h4>Few Words About Enjoy Mostar</h4>
+                        <p class="white">In love with Bosnia and Herzegovina, through the enjoymostar platform, we want to gather all Bosnian's beauties in one place and share them with the domicile and foreign population, with an emphasis on the city of Mostar.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Links</h4>
-                        <ul class="list-unstyled li-space-lg white">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Tools</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li class="media">
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Partners</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -239,18 +192,18 @@
     </div> <!-- end of footer -->  
     <!-- end of footer -->
 
-
     <!-- Copyright -->
     <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                    <p class="p-small">Copyright © www.enjoymo.ba</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
+
 
     
     <!-- Scripts -->

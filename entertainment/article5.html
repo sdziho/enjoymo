@@ -45,13 +45,14 @@
     <!-- end of preloader -->
     
 
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
         <!-- Text Logo - Use this if you don't have a graphic logo -->
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="../images/enjoy_logo.PNG" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="../index.html"><img src="../images/enjoy_logo.PNG" alt="alternative"></a>
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +60,11 @@
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
         <!-- end of mobile menu toggle button -->
-
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <a href="article5.html"><img style="padding-right: 5px; margin: auto auto;" src="../images/uk.PNG" alt="alternative"></a>
+            <a href="article5.html?lng=bos"><img style="padding-right: 5px;" src="../images/bih.PNG" alt="alternative"></a>
+            <a href="article5.html?lng=ger"><img src="../images/de.PNG" alt="alternative"></a>
+        </div>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -106,7 +111,6 @@
     </nav> <!-- end of navbar -->
     <!-- end of navbar -->
 
-
     <!-- Header -->
     <header id="header" class="ex-header">
         <div class="container">
@@ -132,7 +136,13 @@
                         <h3>Mount biking</h3>
                         <div class="row">
                             <div class="col-md-6">
-                                <p>In the wider area of the Fortica Park as well as the Velež mountain, over 200 km of trails ideal for mountain biking have been marked, which you can tour alone or with our guides. At the mountain lodge you can get a free copy of your pocket card with all the marked trails, and bicycles are available for rent. A special offer is the rental of electric bicycles. There are various trails available from easy for beginners and children to extreme for experienced cyclists eager for adventure.</p>    
+                                <p id="jezik">In the wider area of the Fortica Park as well as the Velež mountain, over 200 km of trails ideal for mountain biking have been marked, which you can tour alone or with our guides. At the mountain lodge you can get a free copy of your pocket card with all the marked trails, and bicycles are available for rent. A special offer is the rental of electric bicycles. There are various trails available from easy for beginners and children to extreme for experienced cyclists eager for adventure.</p>    
+                                <script>
+                                    var jezik=window.location.href.substr(-3);
+                                    console.log(jezik)
+                                    if(jezik=="ger") document.getElementById("jezik").innerHTML="In der weiteren Umgebung des Fortica-Parks sowie des Velež-Berges wurden über 200 km Wanderwege markiert, die sich ideal zum Mountainbiken eignen und die Sie alleine oder mit unseren Guides erkunden können. In der Mountain Lodge erhalten Sie eine kostenlose Kopie Ihrer Taschenkarte mit allen markierten Wanderwegen. Fahrräder können gemietet werden. Ein besonderes Angebot ist der Verleih von Elektrofahrrädern. Es gibt verschiedene Wege, von leicht für Anfänger und Kinder bis extrem für erfahrene Radfahrer, die Abenteuer erleben möchten."
+                                    else if(jezik=="bos") document.getElementById("jezik").innerHTML="Na širem području Parka Fortica kao i planine Velež markirano je preko 200 km staza idealnih za brdski biciklizam koje možete obilaziti sami ili sa našim vodičima. U planinskom domu možete dobiti besplatan primjerak džepne karte sa svim ucrtanim stazama, a na raspolaganju su i bicikla za najam. Posebna ponuda je najam električnih bicikala. Na raspolaganju su različite staze od jednostavnih za početnike i djecu do ekstremnih za iskusne bicikliste željne avanture."
+                                </script>
                             </div> <!-- end of col -->
 
                             <div class="col-md-6">
@@ -143,12 +153,6 @@
                             </div> <!-- end of col -->
                         </div> <!-- end of row -->
                     </div> <!-- end of text-container-->
-                    
-                    
-  
-                    
-                            
-                    <a class="btn-outline-reg back" href="../index.html#enter">BACK</a>
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -156,77 +160,29 @@
     <!-- end of privacy content -->
 
 
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Privacy Policy</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
-
-    
     <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="text-container about">
-                        <h4>Few Words About Aria</h4>
-                        <p class="white">We're passionate about creating the best mobile apps for personal develop passionate about creating the best mobile apps for. Personal develop passionate about creating the best mobile apps.</p>
+                        <h4>Few Words About Enjoy Mostar</h4>
+                        <p class="white">In love with Bosnia and Herzegovina, through the enjoymostar platform, we want to gather all Bosnian's beauties in one place and share them with the domicile and foreign population, with an emphasis on the city of Mostar.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Links</h4>
-                        <ul class="list-unstyled li-space-lg white">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Tools</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li class="media">
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Partners</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -234,18 +190,18 @@
     </div> <!-- end of footer -->  
     <!-- end of footer -->
 
-
     <!-- Copyright -->
     <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                    <p class="p-small">Copyright © www.enjoymo.ba</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
+
 
     
     <!-- Scripts -->

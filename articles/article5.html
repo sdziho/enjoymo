@@ -132,13 +132,18 @@
                         <h3>The mevlud in Blagaj</h3>
                         <div class="row">
                             <div class="col-md-6">
-                                <p>The tradition of annual gatherings and annual farewells in Blagaj lasted until 1925, and in the same year her last sheikh died . Since then, the tekke has more or less become just a tourist attraction, but tourism between the two wars has not received enough attention either. However, the tradition of the Blagaj mevlud, colloquially known as the dervish mevlud, was renewed in 1975 by Sheikh Fejzulah ef Hadžibajrić - on behalf of the Tariqat Center, and the Mufti of Mostar h. Seid ef Smajkić - on behalf of the institutions of the Islamic Community in BiH. </p>
-                                <p>The traditional mevlud, according to the calendar of the Riyaset of the Islamic Community in BiH, is organized every other Saturday in May. This tradition has become an internationally significant event that brings together about 30,000 believers from Bosnia and Herzegovina and various parts of the world. </p>
+                                <p id="jezik">The tradition of annual gatherings and annual farewells in Blagaj lasted until 1925, and in the same year her last sheikh died . Since then, the tekke has more or less become just a tourist attraction, but tourism between the two wars has not received enough attention either. However, the tradition of the Blagaj mevlud, colloquially known as the dervish mevlud, was renewed in 1975 by Sheikh Fejzulah ef Hadžibajrić - on behalf of the Tariqat Center, and the Mufti of Mostar h. Seid ef Smajkić - on behalf of the institutions of the Islamic Community in BiH. The traditional mevlud, according to the calendar of the Riyaset of the Islamic Community in BiH, is organized every other Saturday in May. This tradition has become an internationally significant event that brings together about 30,000 believers from Bosnia and Herzegovina and various parts of the world. </p>
+                                <script>
+                                    var jezik=window.location.href.substr(-3);
+                                    console.log(jezik)
+                                    if(jezik=="bos") document.getElementById("jezik").innerHTML= "Tradicija godišnjeg okupljanja i godišnjeg dovišta u Blagaju održala se sve do 1925., a iste godine umro je i posljednji njen šejh. Tekija je od tada, više-manje, postala samo turistička atrakcija, ali ni turizmu između dva rata se nije poklanjala dovoljna pažnja. No, tradiciju blagajskog mevluda, kolokvijalno poznatog kao derviški mevlud, obnovili su 1975. g. šejh Fejzulah ef. Hadžibajrić – u ime Tarikatskog centra, i mostarski muftija h. Seid ef. Smajkić – u ime institucija IZ-e u BiH. Tradicionalni mevlud, prema kalendaru Rijaseta IZ u BiH, organizira se svake druge subote u mjesecu maju. Ova tradicija je postala međunarodno značajna manifestacija koja okuplja oko 30.000 vjernika iz Bosne i Hercegovine i raznih krajeva svijeta. "
+                                    else if(jezik=="ger") document.getElementById("jezik").innerHTML="Die Tradition der jährlichen Versammlungen und jährlichen Abschiede in Blagaj dauerte bis 1925, und im selben Jahr starb ihr letzter Scheich. Seitdem ist die Tekke mehr oder weniger nur eine Touristenattraktion geworden, aber der Tourismus zwischen den beiden Kriegen hat auch nicht genug Aufmerksamkeit erhalten. Die Tradition des Blagaj Mevlud, umgangssprachlich als Derwisch-Mevlud bekannt, wurde jedoch 1975 erneuert. Sheikh Fejzulah ef. Hadžibajrić - im Auftrag des Tariqat-Zentrums und des Mufti von Mostar h. Seid ef. Smajkić - im Namen der Institutionen der Islamischen Gemeinschaft in Bosnien und Herzegowina. Das traditionelle Mevlud wird nach dem Kalender des Riyaset der Islamischen Gemeinschaft in Bosnien und Herzegowina jeden zweiten Samstag im Mai organisiert. Diese Tradition ist zu einem international bedeutenden Ereignis geworden, an dem rund 30.000 Gläubige aus Bosnien und Herzegowina und verschiedenen Teilen der Welt teilnehmen."
+                                    </script>
                             </div> <!-- end of col -->
 
                             <div class="col-md-6">
                                 <div class="card-image">
-                                    <img class="img-fluid" src="../images/blagaj.jpg" alt="alternative">
+                                    <img class="img-fluid" src="https://live.staticflickr.com/65535/49955084843_5659f3293d_b.jpg" alt="alternative">
                                 </div>
                             </div> <!-- end of col -->
                         </div> <!-- end of row -->
@@ -146,9 +151,6 @@
                     
                     
   
-                    
-                            
-                    <a class="btn-outline-reg back" href="../culture.html">BACK</a>
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -156,77 +158,29 @@
     <!-- end of privacy content -->
 
 
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Privacy Policy</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
-
-    
     <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="text-container about">
-                        <h4>Few Words About Aria</h4>
-                        <p class="white">We're passionate about creating the best mobile apps for personal develop passionate about creating the best mobile apps for. Personal develop passionate about creating the best mobile apps.</p>
+                        <h4>Few Words About Enjoy Mostar</h4>
+                        <p class="white">In love with Bosnia and Herzegovina, through the enjoymostar platform, we want to gather all Bosnian's beauties in one place and share them with the domicile and foreign population, with an emphasis on the city of Mostar.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Links</h4>
-                        <ul class="list-unstyled li-space-lg white">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Tools</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li class="media">
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Partners</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -234,13 +188,12 @@
     </div> <!-- end of footer -->  
     <!-- end of footer -->
 
-
     <!-- Copyright -->
     <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                    <p class="p-small">Copyright © www.enjoymo.ba</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->

@@ -480,6 +480,11 @@ mark,
   max-width: 100%;
   height: auto;
 }
+.img-ispod {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 1rem;
+}
 .img-pokrij {
   object-fit:cover;
   object-position: right;
@@ -487,8 +492,11 @@ mark,
   height: 250px;
 }
 .img-galerija {
-  max-height: 100%;
-  max-width: 100%;
+  display: block;
+  max-width:100%;
+  max-height:722px;
+  width: auto;
+  height: auto;
 }
 .img-thumbnail {
   padding: 0.25rem;

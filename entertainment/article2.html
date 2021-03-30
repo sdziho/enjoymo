@@ -45,13 +45,14 @@
     <!-- end of preloader -->
     
 
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
         <!-- Text Logo - Use this if you don't have a graphic logo -->
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="../images/enjoy_logo.PNG" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="../index.html"><img src="../images/enjoy_logo.PNG" alt="alternative"></a>
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +60,11 @@
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
         <!-- end of mobile menu toggle button -->
-
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <a href="article2.html"><img style="padding-right: 5px; margin: auto auto;" src="../images/uk.PNG" alt="alternative"></a>
+            <a href="article2.html?lng=bos"><img style="padding-right: 5px;" src="../images/bih.PNG" alt="alternative"></a>
+            <a href="article2.html?lng=ger"><img src="../images/de.PNG" alt="alternative"></a>
+        </div>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -105,8 +110,6 @@
         </div>
     </nav> <!-- end of navbar -->
     <!-- end of navbar -->
-
-
     <!-- Header -->
     <header id="header" class="ex-header">
         <div class="container">
@@ -132,7 +135,13 @@
                         <h3>Zip Line</h3>
                         <div class="row">
                             <div class="col-md-6">
-                                <p>Experience an unforgettable descent down the ZIP LINE with a total length of 1000 m with a beautiful view of Mostar and the surrounding area. There are two cables 570 and 430 m long that connect the two elevations above Mostar, and we also offer children's ZIP LINE length 20 and 50 m. All users have at their disposal complete protective equipment from top world manufacturers, and before the descent they undergo a short training in the use of equipment. The maximum speed achieved during the descent is 90 km / h depending on the wind and the weight of the user. located at the state flag of BiH, and after the descent, a return to the starting point is ensured. Our experienced instructors will make sure that your descent is a safe and fun experience, and in addition to the individual descent, we also offer the ZIP LINE tandem.</p>
+                                <p id="jezik">Experience an unforgettable descent down the ZIP LINE with a total length of 1000 m with a beautiful view of Mostar and the surrounding area. There are two cables 570 and 430 m long that connect the two elevations above Mostar, and we also offer children's ZIP LINE length 20 and 50 m. All users have at their disposal complete protective equipment from top world manufacturers, and before the descent they undergo a short training in the use of equipment. The maximum speed achieved during the descent is 90 km / h depending on the wind and the weight of the user. located at the state flag of BiH, and after the descent, a return to the starting point is ensured. Our experienced instructors will make sure that your descent is a safe and fun experience, and in addition to the individual descent, we also offer the ZIP LINE tandem.</p>
+                                <script>
+                                    var jezik=window.location.href.substr(-3);
+                                    console.log(jezik)
+                                    if(jezik=="ger") document.getElementById("jezik").innerHTML="Erleben Sie ein unvergessliches Erlebnis beim Abstieg auf der ZIP LINE mit einer Gesamtlänge von 1000 m und einem wunderschönen Blick auf Mostar und die Umgebung. Es gibt zwei Kabel mit einer Länge von 570 und 430 m, die die beiden Erhebungen über Mostar verbinden, und wir bieten auch Kinder an ZIP LINE Länge 20 und 50 m. Allen Anwendern steht eine komplette Schutzausrüstung von Top-Herstellern der Welt zur Verfügung. Vor dem Abstieg werden sie kurz im Umgang mit Geräten geschult. Die beim Abstieg erreichte Höchstgeschwindigkeit beträgt 90 km / h Aufgrund des Windes und des Gewichts des Benutzers, der sich an der Staatsflagge von Bosnien und Herzegowina befindet, und nach dem Abstieg ist eine Rückkehr zum Ausgangspunkt gewährleistet. Unsere erfahrenen Instruktoren sorgen dafür, dass Ihr Abstieg eine sichere und unterhaltsame Erfahrung ist Neben der individuellen Abfahrt bieten wir auch das ZIP LINE "
+                                    else if(jezik=="bos") document.getElementById("jezik").innerHTML="Doživite nezaboravno iskustvo spuštanja niz ZIP LINE ukupne dužine 1000 m sa prekrasnim pogledom na Mostar i okolicu.Na raspolaganju su dvije sajle dužine 570 i 430 m koje povezuju dva uzvišenja iznad Mostara, a osim toga nudimo i dječiji ZIP LINE dužine 20 i 50 m.Svi korisnici na raspolaganju imaju kompletnu zaštitnu opremu vrhunskih svjetskih proizvođača, a prije spuštanja prolaze kratku obuku korištenja opreme.Maksimalna brzina koja se postiže prilikom spuštanja je 90 km/h u zavisnosti od vjetra i težine korisnika.Polazno mjesto za sve aktivnosti je planinski dom koji se nalazi kod državne zastave BiH, a nakon spuštanja je osiguran povratak na polaznu tačku.Naši iskusni instruktori će se pobrinuti da vaše spuštanje bude bezbjedno i zabavno iskustvo, a pored pojedinačnog spuštanja nudimo i ZIP LINE tandem."
+                                    </script>
                             </div> <!-- end of col -->
 
                             <div class="col-md-6">
@@ -142,12 +151,6 @@
                             </div> <!-- end of col -->
                         </div> <!-- end of row -->
                     </div> <!-- end of text-container-->
-                    
-                    
-  
-                    
-                            
-                    <a class="btn-outline-reg back" href="../index.html#enter">BACK</a>
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -155,77 +158,30 @@
     <!-- end of privacy content -->
 
 
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Privacy Policy</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
 
-    
     <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="text-container about">
-                        <h4>Few Words About Aria</h4>
-                        <p class="white">We're passionate about creating the best mobile apps for personal develop passionate about creating the best mobile apps for. Personal develop passionate about creating the best mobile apps.</p>
+                        <h4>Few Words About Enjoy Mostar</h4>
+                        <p class="white">In love with Bosnia and Herzegovina, through the enjoymostar platform, we want to gather all Bosnian's beauties in one place and share them with the domicile and foreign population, with an emphasis on the city of Mostar.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Links</h4>
-                        <ul class="list-unstyled li-space-lg white">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Tools</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li class="media">
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Partners</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -233,13 +189,12 @@
     </div> <!-- end of footer -->  
     <!-- end of footer -->
 
-
     <!-- Copyright -->
     <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                    <p class="p-small">Copyright © www.enjoymo.ba</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->

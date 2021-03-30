@@ -132,12 +132,19 @@
                         <h3>Comedy fesival "Mostarska liska"</h3>
                         <div class="row">
                             <div class="col-md-6">
-                                <p>Launched by the National Theater in Mostar in 1991, is a significant cultural event.The initiator of the Festival was the director Ahmet Obradović . The first festival was held from 11 - 17 May 1991. Due to the war in Bosnia and Herzegovina, the Festival was not held until 2004 . when he was reanimated on the initiative of the actor of the Mostar National Theater, Sherif Aljić . The "Big Fox" and "Little Fox" awards are presented within the Festival.</p>
+                                <p id="jezik">Launched by the National Theater in Mostar in 1991, is a significant cultural event.The initiator of the Festival was the director Ahmet Obradović . The first festival was held from 11 - 17 May 1991. Due to the war in Bosnia and Herzegovina, the Festival was not held until 2004 . when he was reanimated on the initiative of the actor of the Mostar National Theater, Sherif Aljić . The "Big Fox" and "Little Fox" awards are presented within the Festival.</p>
+                                <script>
+                                    var jezik=window.location.href.substr(-3);
+                                    console.log(jezik)
+                                    if(jezik=="bos") document.getElementById("jezik").innerHTML= "Festival komedije Mostarska liska, Kojeg je pokrenulo Narodno pozorište u Mostaru 1991. godine je značajna kulturna manifestacija. Inicijator Festivala je bio režiser Ahmet Obradović. Prvi festival održan je od 11-17. maja 1991. godine. Zbog rata u Bosni i Hercegovini Festival se nije održavao sve do 2004. kada je reanimiran na inicijativu glumca mostarskog Narodnog pozorišta Šerifa Aljića. U okviru Festivala dodjeljuju se nagrade 'Velika liska' i 'Mala liska'."
+                                    else if(jezik=="ger") document.getElementById("jezik").innerHTML="Es wurde 1991 vom Nationaltheater in Mostar ins Leben gerufen und ist ein bedeutendes kulturelles Ereignis. Der Initiator des Festivals war der Regisseur Ahmet Obradović. Das erste Festival fand von 11-17 statt. Mai 1991. Aufgrund des Krieges in Bosnien und Herzegowina fand das Festival erst 2004 statt, als es auf Initiative des Schauspielers des Mostar-Nationaltheaters, Sherif Aljić, wiederbelebt wurde. Die Preise 'Big Fox' und 'Little Fox' werden im Rahmen des Festivals verliehen."
+                                </script>
                             </div> <!-- end of col -->
 
                             <div class="col-md-6">
                                 <div class="card-image">
-                                    <img class="img-fluid" src="../images/stari_most.jpg" alt="alternative">
+                                    <img class="img-fluid" src="https://static.klix.ba/media/images/vijesti/190420014.12_mn.jpg?v=1" alt="alternative">
+                                    <div style="font-size: 12px;"><i>Photo: klix.ba</i></div>
                                 </div>
                             </div> <!-- end of col -->
                         </div> <!-- end of row -->
@@ -145,9 +152,6 @@
                     
                     
   
-                    
-                            
-                    <a class="btn-outline-reg back" href="../culture.html">BACK</a>
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -155,77 +159,29 @@
     <!-- end of privacy content -->
 
 
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Privacy Policy</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
-
-    
     <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="text-container about">
-                        <h4>Few Words About Aria</h4>
-                        <p class="white">We're passionate about creating the best mobile apps for personal develop passionate about creating the best mobile apps for. Personal develop passionate about creating the best mobile apps.</p>
+                        <h4>Few Words About Enjoy Mostar</h4>
+                        <p class="white">In love with Bosnia and Herzegovina, through the enjoymostar platform, we want to gather all Bosnian's beauties in one place and share them with the domicile and foreign population, with an emphasis on the city of Mostar.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Links</h4>
-                        <ul class="list-unstyled li-space-lg white">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Tools</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li class="media">
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Partners</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -233,13 +189,12 @@
     </div> <!-- end of footer -->  
     <!-- end of footer -->
 
-
     <!-- Copyright -->
     <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                    <p class="p-small">Copyright © www.enjoymo.ba</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->

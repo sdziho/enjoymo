@@ -129,6 +129,7 @@
         else if(window.location.href.substr(-3)=="oth") filterValue = ".oth";
         $choice.isotope({ filter: filterValue });
         $grid.isotope({ filter: filterValue });
+        $filtriraj.isotope({ filter: ".ottoman" });
     });
     $('.filters-button-group').on( 'click', 'a', function() {
         var filterValue = $(this).attr('data-filter');
@@ -154,7 +155,7 @@
         });	
     });
     
-
+    
     /* Counter - CountTo */
 	var a = 0;
 	$(window).scroll(function() {

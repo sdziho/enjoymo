@@ -1154,7 +1154,12 @@ input[type='checkbox'] {
 	font-size: 0.5rem;
 	line-height: 1.375rem;
 }
-
+.list-unstyled .fas {
+	color: #14bf98;
+	font-size: 0.5rem;
+	line-height: 1.375rem;
+	padding-right: 5px;
+}
 .tabs #tab-3 .list-unstyled .media-body {
 	margin-left: 0.625rem;
 }

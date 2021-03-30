@@ -51,7 +51,7 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="../images/enjoy_logo.PNG" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="../index.html"><img src="../images/enjoy_logo.PNG" alt="alternative"></a>
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +59,11 @@
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
         <!-- end of mobile menu toggle button -->
-
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <a href="article1.html"><img style="padding-right: 5px; margin: auto auto;" src="../images/uk.PNG" alt="alternative"></a>
+            <a href="article1.html?lng=bos"><img style="padding-right: 5px;" src="../images/bih.PNG" alt="alternative"></a>
+            <a href="article1.html?lng=ger"><img src="../images/de.PNG" alt="alternative"></a>
+        </div>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -132,7 +136,13 @@
                         <h3 id="naslov">Via ferata + Hiking</h3>
                         <div class="row">
                             <div class="col-md-6">
-                              <p>Fortica Park offers many hiking trails and certainly the most attractive is a tour of the Stolac hill, where there are several bunkers from World War II, as well as the remains of the cable car that delivered food and ammunition from the city. It is on this hill, on the site of "devil's stairs" with two directions of ascent A (easier ascent) and C (medium difficult), which takes you to the very edge of the elevation from which offers a beautiful view of the old town and the old bridge. In the mountain lodge you can get instructions or guide services as well as rent equipment for via ferrata.</p>  
+                              <p id="jezik">Fortica Park offers many hiking trails and certainly the most attractive is a tour of the Stolac hill, where there are several bunkers from World War II, as well as the remains of the cable car that delivered food and ammunition from the city. It is on this hill, on the site of "devil's stairs" with two directions of ascent A (easier ascent) and C (medium difficult), which takes you to the very edge of the elevation from which offers a beautiful view of the old town and the old bridge. In the mountain lodge you can get instructions or guide services as well as rent equipment for via ferrata.</p>  
+                              <script>
+                                var jezik=window.location.href.substr(-3);
+                                console.log(jezik)
+                                if(jezik=="ger") document.getElementById("jezik").innerHTML="Der Fortica Park bietet viele Wanderwege und sicherlich der attraktivste ist eine Tour über den Stolac-Hügel, wo sich mehrere Bunker aus dem Zweiten Weltkrieg befinden, sowie die Überreste der Seilbahn, die Lebensmittel und Munition aus der Stadt lieferte. Es befindet sich auf diesem Hügel an der Stelle der 'Teufelstreppe' mit zwei Aufstiegsrichtungen A (leichter Aufstieg) und C (mittelschwer), die Sie zum äußersten Rand der Erhebung führt, von der aus Sie einen schönen Blick haben die Altstadt und die alte Brücke. In der Berghütte können Sie Anweisungen oder Reiseleitung erhalten sowie Ausrüstung für Klettersteige mieten."
+                                else if(jezik=="bos") document.getElementById("jezik").innerHTML="Park Fortica nudi mnoštvo staza za hiking a svakako najatraktivniji je obilazak uzvišenja Stolac na kojem se nalazi nekoliko bunkera iz II svjetskog rata kao i ostatci žičare kojom su iz grada dopremani hrana i municija. Upravo na tom uzvišenju, na lokalitetu 'đavolje stepenice' sa dva pravca uspona ocjena A (lakši uspon) i C (srednje teški), koja vas vodi na sami rub uzvišenja sa kojega se pruža prelijepi pogled na stari dio grada i stari most. U planinskom domu možete dobiti upute odnosno usluge vodiča kao i najam opreme za via feratu.";
+                                </script>
                             </div> <!-- end of col -->
 
                             <div class="col-md-6">
@@ -143,31 +153,12 @@
                         </div> <!-- end of row -->
                     </div> <!-- end of text-container-->
                     
-                    
-  
-                    
-                            
-                    <a class="btn-outline-reg back" href="../index.html#enter">BACK</a>
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic-2 -->
     <!-- end of privacy content -->
 
-
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Privacy Policy</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
 
     
     <!-- Footer -->
@@ -176,56 +167,23 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="text-container about">
-                        <h4>Few Words About Aria</h4>
-                        <p class="white">We're passionate about creating the best mobile apps for personal develop passionate about creating the best mobile apps for. Personal develop passionate about creating the best mobile apps.</p>
+                        <h4>Few Words About Enjoy Mostar</h4>
+                        <p class="white">In love with Bosnia and Herzegovina, through the enjoymostar platform, we want to gather all Bosnian's beauties in one place and share them with the domicile and foreign population, with an emphasis on the city of Mostar.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Links</h4>
-                        <ul class="list-unstyled li-space-lg white">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Tools</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li class="media">
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Partners</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -233,13 +191,12 @@
     </div> <!-- end of footer -->  
     <!-- end of footer -->
 
-
     <!-- Copyright -->
     <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                    <p class="p-small">Copyright © www.enjoymo.ba</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->

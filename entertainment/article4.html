@@ -51,7 +51,7 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="../images/enjoy_logo.PNG" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="../index.html"><img src="../images/enjoy_logo.PNG" alt="alternative"></a>
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +59,11 @@
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
         <!-- end of mobile menu toggle button -->
-
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <a href="article4.html"><img style="padding-right: 5px; margin: auto auto;" src="../images/uk.PNG" alt="alternative"></a>
+            <a href="article4.html?lng=bos"><img style="padding-right: 5px;" src="../images/bih.PNG" alt="alternative"></a>
+            <a href="article4.html?lng=ger"><img src="../images/de.PNG" alt="alternative"></a>
+        </div>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -132,7 +136,13 @@
                         <h3>Downhilling</h3>
                         <div class="row">
                             <div class="col-md-6">
-                                <p>Going down the 30 m high cliff is a very exciting experience that is completely supervised by our experienced instructors and your task is just to follow their instructions and enjoy. As a rule, it is performed in combination with the ZIP LINE service, but it can also be organized as a special service.</p>
+                                <p id="jezik">Going down the 30 m high cliff is a very exciting experience that is completely supervised by our experienced instructors and your task is just to follow their instructions and enjoy. As a rule, it is performed in combination with the ZIP LINE service, but it can also be organized as a special service.</p>
+                                <script>
+                                    var jezik=window.location.href.substr(-3);
+                                    console.log(jezik)
+                                    if(jezik=="ger") document.getElementById("jezik").innerHTML="Die 30 m hohe Klippe hinunterzugehen ist eine sehr aufregende Erfahrung, die von unseren erfahrenen Ausbildern vollständig überwacht wird. Ihre Aufgabe ist es einfach, ihren Anweisungen zu folgen und sie zu genießen. Es wird in der Regel in Kombination mit dem ZIP LINE-Dienst durchgeführt, kann aber auch als spezieller Dienst organisiert werden."
+                                    else if(jezik=="bos") document.getElementById("jezik").innerHTML="Spuštanje užetom niz 30 m visoku liticu predstavlja jako uzbudljivo iskustvo koje potpuno nadziru naši iskusni instruktori a vaš zadatak je samo da pratite njihove upute i uživate. U pravilu se izvodi u kombinaciji sa ZIP LINE uslugom, ali može se organizovati i kao posebna usluga."
+                                </script>
                             </div> <!-- end of col -->
 
                             <div class="col-md-6">
@@ -144,89 +154,35 @@
                         </div> <!-- end of row -->
                     </div> <!-- end of text-container-->
                     
-                    
-  
-                    
-                            
-                    <a class="btn-outline-reg back" href="../index.html#enter">BACK</a>
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic-2 -->
     <!-- end of privacy content -->
 
-
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Privacy Policy</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
-
-    
     <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="text-container about">
-                        <h4>Few Words About Aria</h4>
-                        <p class="white">We're passionate about creating the best mobile apps for personal develop passionate about creating the best mobile apps for. Personal develop passionate about creating the best mobile apps.</p>
+                        <h4>Few Words About Enjoy Mostar</h4>
+                        <p class="white">In love with Bosnia and Herzegovina, through the enjoymostar platform, we want to gather all Bosnian's beauties in one place and share them with the domicile and foreign population, with an emphasis on the city of Mostar.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Links</h4>
-                        <ul class="list-unstyled li-space-lg white">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Tools</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li class="media">
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Partners</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -234,13 +190,12 @@
     </div> <!-- end of footer -->  
     <!-- end of footer -->
 
-
     <!-- Copyright -->
     <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                    <p class="p-small">Copyright © www.enjoymo.ba</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
