@@ -19,7 +19,6 @@
 		}
 		hidePreloader();
 	});
-
 	
 	/* Navbar Scripts */
 	// jQuery to collapse the navbar on scroll
